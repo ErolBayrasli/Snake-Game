@@ -5,6 +5,17 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
+    flex-direction: column; 
+    background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0');
+    background-size: cover;
+    background-position: center;
+}
+
+#scoreboard {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #game-board {
@@ -14,7 +25,9 @@ body {
     grid-template-rows: repeat(21, 1fr);
     grid-template-columns: repeat(21, 1fr);
     position: relative;
- background-image: url('https://into-prodweb.s3.amazonaws.com/medias/original/6/e/7/6e71e0f4e1fbea8c2cdaa323aa4f269134a148d6.jpg');
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .snake {
@@ -28,7 +41,7 @@ body {
 .food {
     width: 80%;
     height: 80%;
-    background-color: #78e0ff; /* Temporary color for testing */
+    background-color: #eb8838; 
     border-radius: 50%;
     position: relative;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
